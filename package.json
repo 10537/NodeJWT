@@ -1,0 +1,21 @@
+{
+  "name": "node-auth",
+  "version": "1.0.0",
+  "description": "A little implementation of JWT with Node.js",
+  "main": "app.js",
+  "repository": "https://github.com/10537/NodeJWT",
+  "author": "Jose Moreno",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.3",
+    "nodemon": "^2.0.15"
+  }
+}
