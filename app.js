@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const authRoute = require('./routes/auth.js')
+const articlesRoute = require('./routes/articles.js')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 
@@ -19,6 +20,6 @@ app.use(express.json())
 
 //Route Middleware 
 app.use('/api/user', authRoute)
-
+app.use('/api/articles', articlesRoute)
 
 app.listen(3000, () => console.log("Server up and running"))
